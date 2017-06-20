@@ -1,0 +1,16 @@
+class Values { 
+
+#foreach( $name in $myVars )
+    #if ( $name.type == "s" )
+    	#set( $ntype = "String" )
+    #elseif ( $name.type == "i" )
+    	#set( $ntype = "Integer" )
+    #elseif ( $name.type == "d" )
+    	#set( $ntype = "Float" )
+    #end
+##	
+    public static final  $ntype  $name.name = $name.value ;
+##    
+#end
+
+}

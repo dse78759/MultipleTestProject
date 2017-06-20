@@ -1,0 +1,14 @@
+# test comments
+   	# should be gone
+     [i] CITY_LENGTH = 35;
+     [i] COUNTY_LENGTH = "#should not remove";
+     #fasdfasdf
+     [s] REASON_CODE_UNPAID_LEAVE = "ULV";
+     [s] COMP_FREQUENCY_HOURLY="H"; 
+     # eol comment
+     [s] HOTEL="H"; 
+     # wonky "" eol comment
+     
+ 
+   [b] KRAKEN=true;
+   

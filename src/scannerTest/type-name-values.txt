@@ -1,0 +1,4 @@
+int maxage 5
+int maxHeight 92
+string name zebra
+decimal hourlyRate 10.32

@@ -1,0 +1,6 @@
+#foreach( $name in $myVars )
+    ##$name.type blah $name.name blah $name.value
+    var $name.name =$name.value ;
+#end
+
+

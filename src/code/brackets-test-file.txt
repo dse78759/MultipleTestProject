@@ -1,0 +1,13 @@
+12
+{}()[]
+{[}()
+dog(cat)]
+[mouse]house{not}
+{unclosed
+{}{}{}
+()()()
+((()))
+[[[]]]
+]
+asdfasdfa}
+({[tests]}
