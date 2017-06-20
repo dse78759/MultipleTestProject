@@ -48,6 +48,7 @@ class Meta {
     } 
   } 
  
+ // thanks
   public static void main(String args[]) { 
     myMeth(); 
     System.out.println("done");
