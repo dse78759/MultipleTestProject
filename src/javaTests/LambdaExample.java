@@ -1,4 +1,4 @@
-package tests;
+package javaTests;
 
 interface Names {
    public void sayName(String name);

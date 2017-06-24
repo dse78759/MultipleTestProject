@@ -1,7 +1,7 @@
 /**
  * 
  */
-package tests;
+package javaTests;
 
 /**
  * @author dedgar

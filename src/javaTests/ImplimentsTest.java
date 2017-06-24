@@ -1,4 +1,4 @@
-package tests;
+package javaTests;
 
 public class ImplimentsTest implements DefaultTest {
 

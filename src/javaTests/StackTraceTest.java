@@ -1,4 +1,4 @@
-package tests;
+package javaTests;
 
 import java.util.Properties;
 
