@@ -4,10 +4,15 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Map.Entry;
-import java.util.Properties;
 import java.util.TreeMap;
 
-
+/**
+ * Compare the order that different map implementations will return their 
+ * 		entries.
+ *  
+ * @author scott
+ *
+ */
 public class LinkedHashTest {
 	
 	static void sout (String s ) { System.out.println(s); }
@@ -27,7 +32,7 @@ public class LinkedHashTest {
 		fillMe.put(4000, "silver surfer");
 	}
 	
-	public static void subA () {
+	public static void runMapDemo () {
 		
 		Map<Integer,String> mapTest = new LinkedHashMap<Integer,String>();
 		addElementsToMap(mapTest);
@@ -57,8 +62,8 @@ public class LinkedHashTest {
 	
     public static void main(String[] args)throws Exception {
 
-    	subA();
+    	runMapDemo();
     	
-    }//main()
+    }
 
 }
