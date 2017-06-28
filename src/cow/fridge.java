@@ -1,15 +1,28 @@
 package cow;
 
-class fridge {
+/**
+ *  Class with synchronized methods to allow cows to drop off
+ *  	milk and babies to pick it up.
+ *  
+ * @author scott
+ *
+ */
+class Fridge {
 	// sync 
 
-//	vec_test data;
+	//	vec_test data;
 	
 	int amount_milk ;
 	
-	fridge () {
+	Fridge () {
 		//data = new vec_test ();
 		amount_milk = 2;
+		System.out.println("Fridge started with : " + amount_milk + " milks. ");
+	}
+	
+	Fridge ( int startAmt ) {
+		amount_milk=startAmt;
+		System.out.println("Fridge started with : " + amount_milk + " milks. ");
 	}
 
 	synchronized void eat ( long wanted ) {
@@ -28,18 +41,18 @@ class fridge {
 
 		amount_milk-= wanted ;
 		
-		System.out.print ( Thread.currentThread().getName () + "got milk " );	
-		System.out.println ( "Milk Amount left : " + amount_milk );	
-
+		System.out.print ( Thread.currentThread().getName () + " got milk. " );	
+		System.out.println ( " Amount left : " + amount_milk );	
 
 	}
 	
 	synchronized void store ( long amount ) {
 
-		System.out.println ( " fridge: storing milk " );	
+		System.out.println ( " fridge: storing "+amount+" milk from " 
+				+ Thread.currentThread().getName () );	
 		amount_milk+= amount ;
-		System.out.print ( Thread.currentThread().getName () + "stored milk " );	
-		System.out.println ( " . amount : " + amount_milk );	
+		//System.out.print ( Thread.currentThread().getName () + " stored milk " );	
+		System.out.println ( "total amount : " + amount_milk );	
 		
 	}
 	

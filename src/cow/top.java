@@ -6,7 +6,7 @@ class top {
 
 	static public void main ( String r [] ) {
 
-		fridge frig1 = new fridge ();
+		Fridge frig1 = new Fridge ();
 		
 		try {
 

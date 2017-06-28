@@ -4,34 +4,34 @@ class baby extends Thread {
 	
 	boolean locked = false; 
 
-	fridge	token ;
+	Fridge	token ;
 
-	baby () {
+	private baby () {
 		// shouldn't really be called
-		token = new fridge ();
+		token = new Fridge ();
 	}
 
-	baby ( String name , fridge fridge1) {
+	baby ( String name , Fridge fridge1) {
 
-		this ();
+	//	this ();
 		setName (name ) ;
 		token = fridge1;
 	}
 	
 	public void run () {
 	
-		System.out.println ("baby : " + getName() + " :getting to work.");
+		System.out.println ("baby : " + getName() + " awake and hungry.");
 
 		for ( int i =0 ; i < 2; i++ ) {
 
-		// ask for some random amount
-
-		token.eat ( randnum ()  );
-
-		// sleep some random time
+			// ask for some random amount
+	
+			token.eat ( randnum ()  );
+	
+			// sleep some random time
 
 		try {
-		Thread.sleep(randnum() *45 );
+			Thread.sleep(randnum() *45 );
 			} catch ( Exception e ) {}
 
 		}

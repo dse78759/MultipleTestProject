@@ -4,23 +4,23 @@ class cow extends Thread {
 	
 	boolean locked = false; 
 
-	fridge	token ;
+	Fridge	token ;
 
-	cow () {
+	private cow () {
 		// shouldn't really be called
-		token = new fridge ();
+		token = new Fridge ();
 	}
 
-	cow ( String name , fridge fridge1) {
+	cow ( String name , Fridge fridge1) {
 
-		this ();
+		//this ();
 		setName (name ) ;
 		token = fridge1;
 	}
 	
 	public void run () {
 	
-		System.out.println ("thread: " + getName() + " getting to work.");
+		System.out.println ("Cow " + getName() + " getting to work.");
 
 		// random # of loop
 
@@ -43,16 +43,21 @@ class cow extends Thread {
 		token.print ();
 	}
 
-        long randnum () {
+	/**
+	 * Return a number from 1-5;
+	 * 
+	 * @return
+	 */
+	long randnum() {
 
-                double z=Math.random () *100;
-                long zz = Math.round ( z );
+		double z = Math.random() * 100;
+		long zz = Math.round(z);
 
-                zz = zz % 5 + 1;
+		zz = zz % 5 + 1;
 
-                //System.out.println ( "made rand # : " + zz );
+		// System.out.println ( "made rand # : " + zz );
 
-                return ( zz) ;
-        }
+		return (zz);
+	  }
 
 }; 
