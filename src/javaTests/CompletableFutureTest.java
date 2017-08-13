@@ -10,7 +10,7 @@ public class CompletableFutureTest {
 	public static void runMapDemo () {
 		
 		CompletableFuture<Thingy> future = new CompletableFuture<>();
-		future.
+		//future.
 	}
 	
     public static void main(String[] args)throws Exception {
