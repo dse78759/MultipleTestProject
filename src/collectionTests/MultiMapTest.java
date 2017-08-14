@@ -1,4 +1,4 @@
-package javaTests;
+package collectionTests;
 
 import java.util.Map;
 import java.util.Properties;

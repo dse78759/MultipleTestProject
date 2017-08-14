@@ -1,4 +1,4 @@
-package code;
+package collectionTests;
 
 
 import java.util.ArrayList;
@@ -9,10 +9,27 @@ import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.PriorityQueue;
+import java.util.Set;
 import java.util.Stack;
 
-public class HeapTest {
+// note : ABANDONED
+public class SetTest {
 
+	 public class Node {
+	    	public int value;
+	    	Set<Integer> edges;
+	    	public boolean visited;
+	    	public int distance;
+	    	
+			public Node(int v) {
+				value = v;
+				edges = new HashSet<Integer>();
+				distance = -1;
+			}
+	    
+			
+	    }
+	
 	public static void sout ( String s) { System.out.println(s); }
 	
 	public static void main(String[] args) {
@@ -21,7 +38,7 @@ public class HeapTest {
 		
 		final long numTests=500000;
 		
-		HeapTest mult = new HeapTest();
+		SetTest mult = new SetTest();
 		
 		// test 1
 		Date dt1=new Date();// should get current time
