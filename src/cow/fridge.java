@@ -25,6 +25,11 @@ class Fridge {
 		System.out.println("Fridge started with : " + amount_milk + " milks. ");
 	}
 
+	/**
+		Called by baby. 
+		If wanted is less than amount_milk, decrement that amount.
+		If not , hit wait () 
+	*/
 	synchronized void eat ( long wanted ) {
 
 		System.out.println ( Thread.currentThread().getName () + " requesting milk :" + wanted  );	
