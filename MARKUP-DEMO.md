@@ -1,12 +1,3 @@
-
-
-Multiple java based tests and demos. 
-
-	- one directory for simple spring tests
-	- hackerrank challenges
-	- velocity template language examples 
-	- java concurrency and thread demos
-	
 # Heading
 
 ## Sub-heading
@@ -38,5 +29,3 @@ Numbered list:
   3. pears
 
 A [link](http://example.com).
-
-
