@@ -6,8 +6,8 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
-import org.apache.commons.lang.StringEscapeUtils;
-//import java.io.
+//import org.apache.commons.lang3.StringEscapeUtils;
+import org.apache.commons.text.StringEscapeUtils;
 
 public class FileTest2 {
 
@@ -49,6 +49,8 @@ public class FileTest2 {
 	static void printIntAndChar ( int readInt ) {
 		//sout ( readInt + " " + (char)readInt);
 
+//		StringUtils
+		
 		System.out.println(StringEscapeUtils.escapeJava(readInt + " " + (char)readInt));
 
 	}
