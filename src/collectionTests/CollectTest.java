@@ -27,16 +27,23 @@ public class CollectTest {
 	        	System.out.println(e);
 	        }
 	        
-	        // TODO: how make a generator for toArray to convert the stream?
-//	        for ( String s : items.stream().toArray(generator) ) {
-//	        	System.out.println(s);
-//	        }
-
+	        
+	        // what the heck is a predicate? a function returning a boolean that takes one argument
+	        items.stream().filter(fruit->fruit.endsWith("e")).forEach(System.out::println);
+	        //                    ^^^^^^^^^^^^^^^^^^^^^^^^^ predicate
+	        
 	        // TODO : demo mapping
 	        
-	        // tODO : demp joining
+	        // TODO : demo joining
 	        
 	        // demo : explain double colon :: in referencing members of an enum
+	        
+		     // TODO: how make a generator for toArray to convert the stream?
+			//	        for ( String s : items.stream().toArray(generator) ) {
+			//	        	System.out.println(s);
+			//	        }
+
+	        //items.stream().map(c -> c.getCompanyId()).collect(Collectors.toList());
 	        
 	    }
 	
