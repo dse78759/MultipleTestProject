@@ -6,4 +6,4 @@
 * hackerrank challenges
 * velocity template language examples 
 * java concurrency and thread demos
-	
+* java 8 Stream / Predicate / Functional demos
