@@ -3,7 +3,7 @@ package collectionTests;
 import java.util.Map;
 import java.util.Properties;
 
-import org.apache.commons.collections.map.MultiValueMap;
+import org.apache.commons.collections4.map.MultiValueMap;
 
 public class MultiMapTest {
 	

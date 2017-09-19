@@ -10,7 +10,6 @@ public class CollectTest {
 	
 	    public static void main(String[] args) {
 
-	        //3 apple, 2 banana, others 1
 	        List<String> items =
 	                Arrays.asList("apple", "apple", "banana",
 	                        "apple", "orange", "banana", "papaya"
@@ -32,8 +31,6 @@ public class CollectTest {
 	        items.stream().filter(fruit->fruit.endsWith("e")).forEach(System.out::println);
 	        //                    ^^^^^^^^^^^^^^^^^^^^^^^^^ predicate
 	        
-	        // TODO : demo mapping
-	        
 	        // TODO : demo joining
 	        
 	        // demo : explain double colon :: in referencing members of an enum
@@ -43,7 +40,6 @@ public class CollectTest {
 			//	        	System.out.println(s);
 			//	        }
 
-	        //items.stream().map(c -> c.getCompanyId()).collect(Collectors.toList());
 	        
 	    }
 	
