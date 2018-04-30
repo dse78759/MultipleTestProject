@@ -1,6 +1,6 @@
 package fileTest;
 
-import java.io.BufferedInputStream;
+//import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -22,9 +22,9 @@ public class FileTest2 {
 		sout ("" + optionalVelocityTemplateDir.getCanonicalPath() );
 		sout ("abs path: " + optionalVelocityTemplateDir.getAbsolutePath() );
 		sout( "" + optionalVelocityTemplateDir.isDirectory() );
-		sout( "separator char :" + optionalVelocityTemplateDir.separatorChar );
-		sout( "separator :" + optionalVelocityTemplateDir.separator );
-		sout( "path separator :" + optionalVelocityTemplateDir.pathSeparator );
+		sout( "separator char :" + File.separatorChar );
+		sout( "separator :" + File.separator );
+		sout( "path separator :" + File.pathSeparator );
 		
 		FileReader fr=new FileReader(optionalVelocityTemplateDir);
 		
@@ -47,9 +47,6 @@ public class FileTest2 {
 	static void sout (String s ) { System.out.println(s); }
 
 	static void printIntAndChar ( int readInt ) {
-		//sout ( readInt + " " + (char)readInt);
-
-//		StringUtils
 		
 		System.out.println(StringEscapeUtils.escapeJava(readInt + " " + (char)readInt));
 

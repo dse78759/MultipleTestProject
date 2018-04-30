@@ -11,11 +11,11 @@ public class FilterArrayWithStream {
  
 	public static void addCheck ( Set<String> w , String a) {
 		boolean newItem = w.add(a);
-//		if ( !newItem) {
-//			System.err.println("dupe added");
-//		} else {
-//			System.err.println("added");
-//		}
+		if ( !newItem) {
+			System.err.println("dupe added");
+		} else {
+			System.err.println("added");
+		}
 	}
 	
 	public static void main(String[] args) {
@@ -26,15 +26,17 @@ public class FilterArrayWithStream {
 		FilterArrayWithStream.addCheck( zoo,"rhino");
 		FilterArrayWithStream.addCheck( zoo,"hyena");
 		FilterArrayWithStream.addCheck( zoo,"lion");
-		FilterArrayWithStream.addCheck( zoo,"rhino");
+		FilterArrayWithStream.addCheck( zoo,"rhino"); // dupe
         FilterArrayWithStream.addCheck( zoo,"kangaroo");
         FilterArrayWithStream.addCheck( zoo,"spider");
-        FilterArrayWithStream.addCheck( zoo,"lion");
+        FilterArrayWithStream.addCheck( zoo,"lion"); //dupe
         FilterArrayWithStream.addCheck( zoo,"hippo");
         FilterArrayWithStream.addCheck( zoo,"anole");
         FilterArrayWithStream.addCheck( zoo,"orca");
 
 		List<StringBuffer> animals = new ArrayList<StringBuffer>();
+		
+		System.out.println("-------------");
 		
 		zoo.stream().filter(e -> e.endsWith("a") )
 		    .forEach(e -> {
