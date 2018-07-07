@@ -22,12 +22,15 @@ public class CollectWithStream {
 		
 		CollectWithStream.addCheck( zoo,"elephant");
 		CollectWithStream.addCheck( zoo,"rhino");
+		
 		CollectWithStream.addCheck( zoo,"hyena");
 		CollectWithStream.addCheck( zoo,"lion");
 		CollectWithStream.addCheck( zoo,"rhino");
+		
         CollectWithStream.addCheck( zoo,"kangaroo");
         CollectWithStream.addCheck( zoo,"spider");
         CollectWithStream.addCheck( zoo,"lion");
+        
         CollectWithStream.addCheck( zoo,"hippo");
         CollectWithStream.addCheck( zoo,"anole");
         CollectWithStream.addCheck( zoo,"orca");
