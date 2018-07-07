@@ -7,14 +7,14 @@ import java.util.stream.Collectors;
 
 public class CollectWithStream {
  
-	public static void addCheck ( Set<String> w , String a) {
-		boolean newItem = w.add(a);
-//		if ( !newItem) {
-//			System.err.println("dupe added");
-//		} else {
-//			System.err.println("added");
-//		}
-	}
+//	public static void addCheck ( Set<String> w , String a) {
+//		boolean newItem = w.add(a);
+////		if ( !newItem) {
+////			System.err.println("dupe added");
+////		} else {
+////			System.err.println("added");
+////		}
+//	}
 	
 	public static void main(String[] args) {
 
